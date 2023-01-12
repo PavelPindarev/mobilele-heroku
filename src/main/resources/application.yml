@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password:
+    url: jdbc:mysql://localhost:3306/mobilelele?useSSL=false&createDatabaseIfNotExist=true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    defer-datasource-initialization: true
+
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook:
+            client-id: your-client-id
+            client-secret: your-secret
+
+
+mail:
+  host: "localhost"
+  port: 1025
+  username: "mobilele@mobilele.com"
+  password: "topsecret"
