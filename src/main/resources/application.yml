@@ -12,7 +12,6 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
         format_sql: true
     defer-datasource-initialization: true
-
   mvc:
     hiddenmethod:
       filter:
@@ -22,9 +21,8 @@ spring:
       client:
         registration:
           facebook:
-            client-id: your-client-id
-            client-secret: your-secret
-
+            client-id: 485873987030267
+            client-secret: 7c3092e893f3a1a93738b66220d3ee02
 
 mail:
   host: "localhost"
